@@ -70,9 +70,6 @@ nav .logo{
     margin: auto;
     transition: 0.5s;
 }
-.active,.nav-links ul li::after{
-    width: 100%;
-}
 
 .nav-links ul li:hover::after{
     width: 100%;
