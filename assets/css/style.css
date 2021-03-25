@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url(../image/01.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    min-height: 120px;
+    padding: 0% 10%;
+    justify-content: space-between;
+    background: #2d27706b;
+    align-items: center;
+    /* display: inline-block; */
+}
+
+nav img{
+    width: 140px;
+    /* display: inline-block; */
+}
+
+.nav-links{
+    flex: 2;
+    /* display: inline-block; */
+    margin-left: 5%;
+    text-align: left;
+    flex-basis: 50%;
+}
+nav .logo{
+    flex: 1;
+    flex-basis: 10%;
+    /* display: inline-block; */
+}
+.nav-btn-links{
+    /* display: inline-block; */
+    flex: 3;
+    text-align: right;
+    flex-basis: 30%;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    padding: 8px 12px;
+    list-style: none;
+    position: relative;
+}
+.nav-links ul li a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.active,.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #43baff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.active,.nav-links ul li::after{
+    width: 100%;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+
+.btn{
+    /* display: inline-block; */
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background:transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.primary-btn{
+    background: #fff;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+}
+
+.blue-btn{
+    background: #43baff;
+    color: #fff;
+    border: none;
+    margin-left: 5px;
+}
+.fa, .fas{
+    color: #fff;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    width: 1274px;
+}
+
+.text-box h1{
+    font-size: 70px;
+    color: #fff;
+    font-weight: 700;
+    }
